@@ -5,7 +5,6 @@ const fs = require('fs');
  * @param {String} path - The path to the CSV data file.
  * @returns {Promise<void>}
  */
-
 const countStudents = (path) => new Promise((resolve, reject) => {
   fs.readFile(path, 'utf-8', (err, data) => {
     if (err) {
